@@ -41,6 +41,16 @@
       "id": 6,
       "name": "VehicleHeadingAndAccuracy",
       "type": "double[3]"
+    },
+    {
+      "id": 7,
+      "name": "SatelliteCount",
+      "type": "uint8_t"
+    },
+    {
+      "id": 8,
+      "name": "PDOP",
+      "type": "float"
     }
   ],
   "registers": [
