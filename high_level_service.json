@@ -1,6 +1,6 @@
 {
   "type": "HighLevelService",
-  "version": 1,
+  "version": 2,
   "inputs": [
     {
       "id": 0,
@@ -43,6 +43,16 @@
       "id": 8,
       "name": "Action",
       "type": "char[100]"
+    },
+    {
+      "id": 9,
+      "name": "Firmware Git Hash",
+      "type": "char[16]"
+    },
+    {
+      "id": 10,
+      "name": "Firmware Build Date",
+      "type": "char[24]"
     }
   ],
   "enums": [
