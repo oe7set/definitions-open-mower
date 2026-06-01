@@ -9,7 +9,7 @@
   "outputs": [
     {
       "id": 0,
-      "name": "Charge Voltage CHG",
+      "name": "Charge Voltage",
       "type": "float"
     },
     {
@@ -19,7 +19,7 @@
     },
     {
       "id": 2,
-      "name": "Battery Voltage CHG",
+      "name": "Battery Voltage",
       "type": "float"
     },
     {
@@ -39,51 +39,21 @@
     },
     {
       "id": 6,
-      "name": "Battery Current",
-      "type": "float"
-    },
-    {
-      "id": 7,
-      "name": "Battery Voltage BMS",
-      "type": "float"
-    },
-    {
-      "id": 8,
-      "name": "Battery SoC",
-      "type": "float"
-    },
-    {
-      "id": 9,
-      "name": "Battery Temperature",
-      "type": "float"
-    },
-    {
-      "id": 10,
-      "name": "Battery Status",
-      "type": "uint16_t"
-    },
-    {
-      "id": 11,
-      "name": "BMS Extra Data",
-      "type": "char[256]"
-    },
-    {
-      "id": 12,
       "name": "Charge Voltage ADC",
       "type": "float"
     },
     {
-      "id": 13,
+      "id": 7,
       "name": "Battery Voltage ADC",
       "type": "float"
     },
     {
-      "id": 14,
+      "id": 8,
       "name": "DCDC Input Current",
       "type": "float"
     },
     {
-      "id": 15,
+      "id": 9,
       "name": "Charger Input Current",
       "type": "float"
     }
@@ -92,7 +62,8 @@
     {
       "id": 0,
       "name": "Charge Current",
-      "type": "float"
+      "type": "float",
+      "optional": true
     },
     {
       "id": 1,
@@ -117,27 +88,49 @@
     {
       "id": 5,
       "name": "System Current",
-      "type": "float"
+      "type": "float",
+      "optional": true
+    },
+    {
+      "id": 6,
+      "name": "Charge Voltage",
+      "type": "float",
+      "optional": true
+    },
+    {
+      "id": 7,
+      "name": "Termination Current",
+      "type": "float",
+      "optional": true
+    },
+    {
+      "id": 8,
+      "name": "PreCharge Current",
+      "type": "float",
+      "optional": true
+    },
+    {
+      "id": 9,
+      "name": "ReCharge Voltage",
+      "type": "ReChargeVoltages",
+      "optional": true
+    },
+    {
+      "id": 10,
+      "name": "Dangerously Override Hardware Charge Current Limit",
+      "type": "uint8_t",
+      "default": 0
     }
   ],
   "enums": [
     {
-      "id": "BatteryStatusBit",
-      "base_type": "uint16_t",
-      "bitmask": true,
+      "id": "ReChargeVoltages",
+      "base_type": "uint8_t",
       "values": {
-        "STATUS_FULLY_DISCHARGED": 4,
-        "STATUS_FULLY_CHARGED": 5,
-        "STATUS_DISCHARGING": 6,
-        "STATUS_INITIALIZED": 7,
-        "ALARM_REMAINING_TIME": 8,
-        "ALARM_REMAINING_CAPACITY": 9,
-        "ALARM_RESERVED1": 10,
-        "ALARM_TERMINATE_DISCHARGE": 11,
-        "ALARM_OVER_TEMPERATURE": 12,
-        "ALARM_RESERVED2": 13,
-        "ALARM_TERMINATE_CHARGE": 14,
-        "ALARM_OVER_CHARGED": 15
+        "PERCENT_93_0": 0,
+        "PERCENT_94_3": 1,
+        "PERCENT_95_2": 2,
+        "PERCENT_97_6": 3
       }
     }
   ],
