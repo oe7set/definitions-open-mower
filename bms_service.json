@@ -44,7 +44,7 @@
     {
       "id": 8,
       "name": "Extra Data",
-      "type": "char[256]"
+      "type": "char[512]"
     }
   ],
   "registers": [],
@@ -68,5 +68,5 @@
     }
   ],
   "type": "BmsService",
-  "version": 1
+  "version": 2
 }
