@@ -61,6 +61,41 @@
       "id": 10,
       "name": "DOP",
       "type": "float[4]"
+    },
+    {
+      "id": 11,
+      "name": "CorrectionAge",
+      "type": "float"
+    },
+    {
+      "id": 12,
+      "name": "RtkInfo",
+      "type": "float[2]"
+    },
+    {
+      "id": 13,
+      "name": "SolutionStatus",
+      "type": "uint8_t"
+    },
+    {
+      "id": 14,
+      "name": "HeadingInfo",
+      "type": "float[2]"
+    },
+    {
+      "id": 15,
+      "name": "ElevationCutoff",
+      "type": "float"
+    },
+    {
+      "id": 16,
+      "name": "AntennaAgc",
+      "type": "int8_t[10]"
+    },
+    {
+      "id": 17,
+      "name": "JammingStatus",
+      "type": "uint8_t[2]"
     }
   ],
   "registers": [
@@ -100,5 +135,5 @@
     }
   ],
   "type": "GpsService",
-  "version": 2
+  "version": 4
 }
