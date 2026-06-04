@@ -51,6 +51,16 @@
       "id": 8,
       "name": "PDOP",
       "type": "float"
+    },
+    {
+      "id": 9,
+      "name": "SatelliteData",
+      "type": "uint8_t[512]"
+    },
+    {
+      "id": 10,
+      "name": "DOP",
+      "type": "float[4]"
     }
   ],
   "registers": [
@@ -71,6 +81,12 @@
       "name": "Uart",
       "type": "uint8_t",
       "default": 0
+    },
+    {
+      "id": 3,
+      "name": "EnableGnssDetail",
+      "type": "uint8_t",
+      "default": 1
     }
   ],
   "enums": [
@@ -84,5 +100,5 @@
     }
   ],
   "type": "GpsService",
-  "version": 1
+  "version": 2
 }
